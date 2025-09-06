@@ -24,3 +24,13 @@ docker build -t opsnoopop/ubuntu:24.04 .
 ```bash
 docker push opsnoopop/ubuntu:24.04
 ```
+
+### check entrypoint
+```bash
+docker run \
+--name container_ubuntu \
+--rm \
+-it \
+--entrypoint \
+/bin/sh opsnoopop/ubuntu:24.04
+```
